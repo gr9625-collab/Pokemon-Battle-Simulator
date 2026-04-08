@@ -1,27 +1,3 @@
-class Pokemon:
-    def __init__(self, name, hp, attack, defense, sp_attack, sp_defense, moves):
-        self.name = name
-        self.hp = hp
-        self.max_hp = hp
-        self.attack = attack
-        self.defense = defense
-        self.sp_attack = sp_attack
-        self.sp_defense = sp_defense
-        self.moves = moves
-
-    def is_alive(self):
-        return self.hp > 0
-    
-    def take_damage(self, damage):
-        self.hp -= damage
-        if self.hp < 0:
-            self.hp = 0
-
-class Move:
-    def __init__(self, name, power):
-        self.name = name
-        self.power = power
-
 class Battle:
     def __init__(self, p1, p2):
         self.p1 = p1
