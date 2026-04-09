@@ -40,3 +40,13 @@ def load_first_151(folder_path):
         pokedex.append(pokemon)
 
     return pokedex
+
+def load_moves(folder_path):
+    files = os.listdir(folder_path)
+
+    # Sort by the number at the start of filename
+    files.sort(key=lambda x: int(x.split(".")[0]))
+
+    for file_name in files[:918]:
+        file_path = os.path.join(folder_path, file_name)
+        moves = #Function
